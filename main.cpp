@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 
 using namespace std;
 
@@ -71,7 +72,7 @@ int main(){
 /*#3. Объявить динамический массив. Размер массива задаёт пользователь.
 Заполнить массив случайными числами. Вывести на экран адреса и значения элементов массива.*/
 int main(){
-    srand(0);
+    srand(time(0));
     int dlina;
     char *r=nullptr;
     cin>>dlina;
@@ -80,6 +81,7 @@ int main(){
         r[c]=rand()%51;
         cout<<c<<" Value(char): "<<r[c]<<" Address: "<<int(&r[c])<<endl;
     }
+    delete [] r;
     return 0;
 }
 
