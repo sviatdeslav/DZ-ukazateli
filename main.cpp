@@ -171,13 +171,14 @@ int main(){
         fr[c].view=nview(rand()%5);//вид фрукта
         fr[c].color=ncolor(rand()%6);//цвет фрукта
         fr[c].taste=ntaste(rand()%3);//вкус фрукта
-        cout<<"Fruit "<<c+1<<" View "<<fr[c].view
-           <<", Height: "<<fr[c].height
-              <<" cm, Length: "<<fr[c].length
-                <<" cm, Width: "<<fr[c].width
-               <<" cm, Weight: "<<fr[c].weight
-                 <<" kg, Color: "<<fr[c].color
-                <<" Taste: "<<fr[c].taste<<endl;
+        cout<<"Fruit "<<c+1
+            <<"\t View "<<fr[c].view
+            <<","<<"\t Height: "<<fr[c].height
+            <<"\t cm, Length: "<<fr[c].length
+            <<"\t cm, Width: "<<fr[c].width
+            <<"\t cm, Weight: "<<fr[c].weight
+            <<"\t kg, Color: "<<fr[c].color
+            <<"\t Taste: "<<fr[c].taste<<endl;
     }
     delete [] fr;//очистка памяти
     return 0;
